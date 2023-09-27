@@ -1,9 +1,17 @@
-using System;
+Student Billy = new Student();
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello Sandbox World!");
-    }
-}
+Billy.FirstName = "Billy";
+Billy.LastName = "Jones";
+
+Console.WriteLine($"{Billy.FirstName} {Billy.LastName}");
+
+
+// using System;
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine("Hello Sandbox World!");
+//     }
+// }
