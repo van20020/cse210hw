@@ -16,16 +16,16 @@ class Program
     {
         Job job1 = new Job();
 
-        job1.CompanyName = "BYUI";
-        job1.JobTitle = "Technician";
-        job1.StartYear = 2020;
-        job1.EndYear= 2024;
+        job1.CompanyName = "The Avengers";
+        job1.JobTitle = "Iron Man";
+        job1.StartYear = 2008;
+        job1.EndYear= 2020;
 
         Job job2 = new Job();
         
         job2.CompanyName = "McDonalds";
         job2.JobTitle = "Seasonal Employee";
-        job2.StartYear = 2025;
+        job2.StartYear = 2020;
         job2.EndYear = 2026;
 
         Resume myResume = new Resume();
