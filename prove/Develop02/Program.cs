@@ -20,6 +20,8 @@ class Program
         prompts.Add("If I had one thing I could do over today, what would it be?");
 
         // if user picks option to add a new entry
+        
+
         // 1. Pick a random prompt from list above.
         Random random = new Random();
         int randomIndex = random.Next(0, prompts.Count);
@@ -72,6 +74,9 @@ class Program
 
     public static void SaveToFile(List<Entry> entries)
     {
+        Random random = new Random();
+        int randomNumber = random.Next(1, 10000000);
+
         Console.WriteLine("Saving to file...");
 
         string filename = "entries.txt";
@@ -80,7 +85,7 @@ class Program
         {
             foreach (Entry e in entries)
             {
-                outputFile.WriteLine($"Today's Date: {e.EntryDate}\nToday's Prompt: {e.Prompt}\nYour Response: {e.Response}");
+                outputFile.WriteLine($"Today's Date: {e.EntryDate}\nToday's Prompt: {e.Prompt}\nYour Response: {e.Response}\nLucky Number of the Day: {randomNumber}");
             }
         }
     }
