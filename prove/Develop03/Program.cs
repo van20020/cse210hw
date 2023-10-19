@@ -37,7 +37,7 @@ class Program
 
         Console.WriteLine("");
         Reference reference2 = new Reference("Proverbs" , 3 , 5 , 6);
-        Scripture scripture2 = new Scripture(reference2, "Trust in the Lord with all thy heart. In all thy ways acknowledge and He shall direct thy paths.");
+        Scripture scripture2 = new Scripture(reference2, "Trust in the Lord with all thy heart and lean not unto thy own understanding. In all thy ways acknowledge Him and He shall direct thy paths.");
 
         Console.Write("Press ENTER to hide a word. ");
         int totalWords2 = scripture2.GetWords().Count;
