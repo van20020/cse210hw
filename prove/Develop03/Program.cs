@@ -12,7 +12,7 @@ class Program
         List<int> hiddenWords2 = new List<int>();
 
         Console.Write("Press ENTER to hide a word. ");
-        int totalWords1 = scripture1.Words.Count;
+        int totalWords1 = scripture1.GetWords().Count;
         Console.WriteLine("");
 
         while (hiddenWords1.Count < totalWords1)
@@ -26,7 +26,7 @@ class Program
                 randomIndex = random.Next(totalWords1);
             } while (hiddenWords1.Contains(randomIndex));
 
-            scripture1.Words[randomIndex].Hide();
+            scripture1.GetWords()[randomIndex].Hide();
             hiddenWords1.Add(randomIndex);
 
             Console.Write("Press ENTER to hide a word. ");
@@ -40,7 +40,7 @@ class Program
         Scripture scripture2 = new Scripture(reference2, "Trust in the Lord with all thy heart. In all thy ways acknowledge and He shall direct thy paths.");
 
         Console.Write("Press ENTER to hide a word. ");
-        int totalWords2 = scripture2.Words.Count;
+        int totalWords2 = scripture2.GetWords().Count;
         Console.WriteLine("");
 
         while (hiddenWords2.Count < totalWords2)
@@ -55,7 +55,7 @@ class Program
                 randomIndex = random.Next(totalWords2);
             } while (hiddenWords2.Contains(randomIndex));
 
-            scripture2.Words[randomIndex].Hide();
+            scripture2.GetWords()[randomIndex].Hide();
             hiddenWords2.Add(randomIndex);
 
             Console.Write("Press ENTER to hide a word. ");
